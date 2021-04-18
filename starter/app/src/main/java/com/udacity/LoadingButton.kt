@@ -25,7 +25,7 @@ class LoadingButton @JvmOverloads constructor(
     private var widthSize: Int = 0
         set(value) {
             field = value
-            //forces a call to onDraw
+            //forced a call to onDraw
             invalidate()
         }
 
