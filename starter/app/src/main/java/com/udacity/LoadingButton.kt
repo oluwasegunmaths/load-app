@@ -25,7 +25,7 @@ class LoadingButton @JvmOverloads constructor(
     private var widthSize: Int = 0
         set(value) {
             field = value
-            //forced a call to onDraw always
+            //forces a call to onDraw always
             invalidate()
         }
 
@@ -34,7 +34,7 @@ class LoadingButton @JvmOverloads constructor(
     private val textWidth: Float by lazy { paint.measureText("We are loading") }
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        // Paint styles used for rendering are initialized here. This
+        // The Paint styles used for rendering are initialized here. This
         // is a performance optimization, since onDraw() is called
         // for every screen refresh.
         style = Paint.Style.FILL
